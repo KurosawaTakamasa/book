@@ -42,7 +42,7 @@ public class ProductDAO extends DAO {
 				"insert into product value(null, ?, ?)");
 
 		st.setString(1, product.getName());
-		st.setInt(2, product.getPride());
+		st.setInt(2, product.getPrice());
 
 		int line = st.executeUpdate();
 

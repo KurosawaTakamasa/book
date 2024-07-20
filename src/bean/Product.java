@@ -14,7 +14,7 @@ public class Product implements java.io.Serializable {
 		return name;
 	}
 
-	public int getPride(){
+	public int getPrice(){
 		return price;
 	}
 
