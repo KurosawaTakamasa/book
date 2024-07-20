@@ -24,7 +24,7 @@ public class ProductDAO extends DAO {
 			Product p = new Product();
 			p.setId(rs.getInt("id"));
 			p.setName(rs.getString("name"));
-			p.setPrice(rs.getInt("pice"));
+			p.setPrice(rs.getInt("price"));
 			list.add(p);
 		}
 
@@ -39,7 +39,7 @@ public class ProductDAO extends DAO {
 		Connection con = getConnection();
 
 		PreparedStatement st = con.prepareStatement(
-				"insert into product value(null, ?, ?)");
+				"insert into product values(nextval('seq_no2'), ?, ?)");
 
 		st.setString(1, product.getName());
 		st.setInt(2, product.getPrice());
