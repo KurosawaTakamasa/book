@@ -1,7 +1,7 @@
 <%@page contentType="text/html; charset=UTF-8" %>
 <%@include file="../header.html" %>
-<%@include file="../chapter25/menu.jsp" %>
+<%@include file="menu.jsp" %>
 
-<p>ログアウトしました</p>
+カートに商品がありません。
 
 <%@include file="../footer.html" %>
