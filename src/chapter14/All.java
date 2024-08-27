@@ -58,5 +58,3 @@ public class All extends HttpServlet {
 		out.println("</html>");
 	}
 }
-
-
